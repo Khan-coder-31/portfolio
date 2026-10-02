@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
