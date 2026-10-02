@@ -3,6 +3,8 @@ import dbConnect from '@/lib/db';
 import { Project } from '@/lib/models/Project';
 import { Experience } from '@/lib/models/Experience';
 
+export const dynamic = 'force-dynamic';
+
 import Navbar from '@/components/layout/Navbar';
 import Hero from '@/components/sections/Hero';
 import Projects from '@/components/sections/Projects';
