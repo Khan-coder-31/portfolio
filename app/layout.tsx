@@ -13,6 +13,28 @@ export const metadata = {
   icons: {
     icon: '/favicon.png',
   },
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: 'https://portfolio-bay-five-56.vercel.app',
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: '/og-image.png', // I will suggest you add this image soon
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: ['/og-image.png'],
+  },
 };
 
 export default function RootLayout({
