@@ -42,7 +42,12 @@ const Hero = () => {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
+            transition={{
+              delay: 0.4,
+              type: "spring",
+              stiffness: 100,
+              damping: 20
+            }}
             className="mt-6 text-5xl md:text-7xl font-extrabold tracking-tight text-white"
           >
             Crafting <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Digital Experiences</span> that matter.
