@@ -91,10 +91,10 @@ export default function AdminDashboard() {
     // Special handling for arrays (techStack, description)
     const submitData = { ...formData };
     if (activeTab === 'projects' && typeof submitData.techStack === 'string') {
-      submitData.techStack = submitData.techStack.split(',').map(s => s.trim()).filter(Boolean);
+      submitData.techStack = submitData.techStack.split(',').map((s: string) => s.trim()).filter(Boolean);
     }
     if (activeTab === 'experience' && typeof submitData.description === 'string') {
-      submitData.description = submitData.description.split('\n').map(s => s.trim()).filter(Boolean);
+      submitData.description = submitData.description.split('\n').map((s: string) => s.trim()).filter(Boolean);
     }
 
     try {
